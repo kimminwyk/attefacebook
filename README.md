@@ -60,13 +60,33 @@ print(a)
 Whether the login was successful or failed
 
 
+ ####################################################################################
 
-
-
-
-
-
-
-
-
-
+# attefacebook
+2020-06-14
+attefacebook 1.1 version
+Modified things
+-Add and modify exception handling
+-# """ """ remove
+url only supports facebook
+                     ↓
+attefacebook.attempt(url , useremail, userpassword)
+                         ↓
+attefacebook.attemptdata(url , useremail, userpassword,"data")
+                        ↓
+attefacebook.file_name(url,filename)
+                           ↓
+attefacebook.file_namedata(url,filename,"data")
+ 
+ 
+ ####################################################################################
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
