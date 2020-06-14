@@ -87,7 +87,7 @@ try:
             data['email'] = i_d.strip("\n")
             data['pass'] = password
             data['form'] = 'login'
-            if code_data is "data":
+            if code_data == "data":
                 print(data)
             else:
                 try:
