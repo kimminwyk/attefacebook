@@ -95,6 +95,18 @@ attefacebook.file_name(url,filename)
                            
 attefacebook.file_namedata(url,filename,"data")
 
+ Importing modules
+ -help ← from src import help_code
+ 
+ -attefacebook ← import attefacebook
+ 
+ ↑
+ 
+ It is recommended to reduce by using "as"
+ 
+ ↑
+ 
+ Shortened : import attefacebook as face
  
  
  ####################################################################################
