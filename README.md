@@ -1,4 +1,5 @@
 # attefacebook
+attefacebook 1.0 version
 This module is a module for making facebook login request easy.
 
 How to use the module
