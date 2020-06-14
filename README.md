@@ -14,13 +14,20 @@ How to use the module
              id:hello@naver.com
              pw:world
             
-def attempt()\n
-How to use\n
+def attempt()
+
+How to use
+
 import attefacebook
+
 a = attefacebook.attempt("facebook", your facebook email, your facebook password)
+
 print(a)
+
 ↑
+
 Whether the login was successful or failed
+
 
 def file_name()
 How to use
