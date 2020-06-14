@@ -15,11 +15,11 @@ How to use the module
               
              ****************
              
-              id:you email
+             id:you email
               
-              pw:you password
+             pw:you password
               
-              Example explanation ↓
+             Example explanation ↓
               
              ****************
              
