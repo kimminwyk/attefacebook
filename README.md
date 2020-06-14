@@ -14,8 +14,8 @@ How to use the module
              id:hello@naver.com
              pw:world
             
-def attempt()
-How to use
+def attempt()\n
+How to use\n
 import attefacebook
 a = attefacebook.attempt("facebook", your facebook email, your facebook password)
 print(a)
