@@ -1,124 +1,48 @@
 # attefacebook 1.0
-2020-06-14
-attefacebook 1.0 version
 
-This module is a module for making facebook login request easy.
-
-How to use the module
-
-1. attempt("facebook", your facebook email, your facebook password)
-
-2.file_name("facebook,filename,"data") "data" <- Output of transmitted data
-
-                         ↑
-                         
-                       file 
-                       
-              file Contents 
-              
-             ****************
-             
-             id:you email
-              
-             pw:you password
-              
-             Example explanation ↓
-              
-             ****************
-             
-             id:hello@naver.com
-             
-             pw:world
-            
-def attempt()
-
-How to use
-
-import attefacebook
-
-a = attefacebook.attempt("facebook", your facebook email, your facebook password)
-
-print(a)
-
-↑
-
-Whether the login was successful or failed
-
-
-def file_name()
-
-How to use
-
-import attefacebook
-
-a =file_name("facebook",filename,"data")
-
-print(a)
-
-↑
-
-Whether the login was successful or failed
-
-
- ####################################################################################
-
-# attefacebook 1.1
-2020-06-14
-
-
-attefacebook 1.1 version
-
-Modified things
-
--Add and modify exception handling
-
--# """ """ remove
-
--Add data function
-
-#********************************#
-
-#*  url only supports facebook  *#
-
-#********************************#
-                     
-                     
-attefacebook.attempt(url , useremail, userpassword)
-
-                         
-                         
-attefacebook.attemptdata(url , useremail, userpassword,"data")
-
-                        
-                        
-attefacebook.file_name(url,filename)
-
-                           
-                           
-attefacebook.file_namedata(url,filename,"data")
-
- Importing modules
- -help ← from src import help_code
- 
- -attefacebook ← import attefacebook
- 
- ↑
- 
- It is recommended to reduce by using "as"
- 
- ↑
- 
- Shortened : import attefacebook as face
+### attefacebook module example
  
  
- ####################################################################################
+ attefacebook에 사용되는 module
+
+__os__
+__requests__
  
+* * *
+
+#### attefacebook 사용 예시
+```py
+from attefacebook import *
+
+print(attempt('user id','user password'))
+# attempt(uid : str, upw : str) -> str:
+# 반환 -> type str
+
+readattempt('.txt file action')
+# readattempt(FileName : str) -> list
+# 반환 -> type list
+```
+
+### attempt
+
+attempt 함수는 requests 모듈을 사용하여
+
+facebook login 페이지에 요청을 합니다.
  
- 
- 
- 
- 
- 
- 
- 
- 
+### readattempt
+
+readattempt 함수는 os 모듈을 이용하여 파일 위치를 인자로 받고
+
+attempt 함수를 호출합니다.
+
+file text 형식은 
+
+예)
+```
+(user id) (user password)
+hello@naver.com asdf1234
+adnub@gmail.com qwe123
+```
+
+파일을 읽고 띄어쓰기로 아이디 비밀번호 구별합니다.
+
